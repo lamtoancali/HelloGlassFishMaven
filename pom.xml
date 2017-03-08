@@ -215,7 +215,7 @@
 
                 <configuration>
 
-                    <glassfishDirectory>${GLASSFISH_HOME}</glassfishDirectory>
+                    <glassfishDirectory>D:\OwnSpace\java\java_ee_sdk-7u2\glassfish4\glassfish</glassfishDirectory>
 
                     <user>${glassfish.user}</user>
 

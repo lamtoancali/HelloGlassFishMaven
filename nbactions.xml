@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-Local NetBeans Testing Pipeline</actionName>
+            <displayName>Local NetBeans Testing Pipeline</displayName>
+            <goals>
+                <goal>properties:read-project-properties</goal>
+                <goal>clean</goal>
+                <goal>install</goal>
+                <goal>glassfish:redeploy</goal>
+                <goal>-e</goal>
+            </goals>
+            <properties>
+                <glassfish.properties.file.argument>testing</glassfish.properties.file.argument>
+            </properties>
+            <activatedProfiles>
+                <activatedProfile>GLASSFISH_HOME=D:\OwnSpace\java\java_ee_sdk-7u2\glassfish4\glassfish</activatedProfile>
+            </activatedProfiles>
+        </action>
+        <action>
+            <actionName>CUSTOM-Local NetBeans Dev Pipeline</actionName>
+            <displayName>Local NetBeans Dev Pipeline</displayName>
+            <goals>
+                <goal>properties:read-project-properties</goal>
+                <goal>clean</goal>
+                <goal>install</goal>
+                <goal>glassfish:redeploy</goal>
+                <goal>-e</goal>
+            </goals>
+            <properties>
+                <glassfish.properties.file.argument>development</glassfish.properties.file.argument>
+            </properties>
+        </action>
+    </actions>
